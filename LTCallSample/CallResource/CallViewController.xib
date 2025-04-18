@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallViewController">
+            <connections>
+                <outlet property="btnHangUp" destination="jOE-FP-3cA" id="u5w-qg-rlW"/>
+                <outlet property="btnOption" destination="PW4-j3-Xgs" id="hsL-7o-0F0"/>
+                <outlet property="lblDuration" destination="uph-f9-AK3" id="vrP-pA-6gH"/>
+                <outlet property="lblName" destination="Bnb-3F-SLU" id="wH3-fo-xdr"/>
+                <outlet property="lblPhoneNumber" destination="FOl-05-L5a" id="4Xz-U5-u9q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhoneNumber" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOl-05-L5a">
+                    <rect key="frame" x="20" y="120" width="335" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uph-f9-AK3">
+                    <rect key="frame" x="164.5" y="160.5" width="46" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="systemPinkColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-FP-3cA">
+                    <rect key="frame" x="129.5" y="484" width="116" height="103"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="103" id="jkC-Tk-uSL"/>
+                        <constraint firstAttribute="width" constant="116" id="xGi-Ca-Enh"/>
+                    </constraints>
+                    <state key="normal" image="call_no"/>
+                    <connections>
+                        <action selector="hangUpAction:" destination="-1" eventType="touchUpInside" id="xAU-xQ-DRb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bnb-3F-SLU">
+                    <rect key="frame" x="187.5" y="60" width="0.0" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsg-D4-qVe">
+                    <rect key="frame" x="30" y="30" width="50" height="30"/>
+                    <state key="normal" title="Hidden"/>
+                    <connections>
+                        <action selector="hiddenAction:" destination="-1" eventType="touchUpInside" id="en8-xp-Abr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PW4-j3-Xgs">
+                    <rect key="frame" x="50" y="316.5" width="275" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Option"/>
+                    <connections>
+                        <action selector="optionAction:" destination="-1" eventType="touchUpInside" id="cHD-Ns-SRx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FOl-05-L5a" firstAttribute="top" secondItem="Bnb-3F-SLU" secondAttribute="bottom" constant="30" id="9hR-gZ-uoD"/>
+                <constraint firstItem="PW4-j3-Xgs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BPN-C8-ce9"/>
+                <constraint firstItem="uph-f9-AK3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Coj-t1-GP5"/>
+                <constraint firstItem="FOl-05-L5a" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EM7-oN-Kd7"/>
+                <constraint firstItem="Bnb-3F-SLU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J5S-Ul-uJ3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PW4-j3-Xgs" secondAttribute="trailing" constant="50" id="Jin-Ne-DRh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="jOE-FP-3cA" secondAttribute="bottom" constant="80" id="Qfy-Lt-H1l"/>
+                <constraint firstItem="jOE-FP-3cA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rhy-8I-YDO"/>
+                <constraint firstItem="PW4-j3-Xgs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="Xge-9g-DxW"/>
+                <constraint firstItem="FOl-05-L5a" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="eaw-We-C10"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="jOE-FP-3cA" secondAttribute="bottom" constant="80" id="frI-E4-yyx"/>
+                <constraint firstItem="Hsg-D4-qVe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="meA-bs-nYO"/>
+                <constraint firstItem="Hsg-D4-qVe" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="ofx-F6-md2"/>
+                <constraint firstItem="FOl-05-L5a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="qvM-9l-3cr"/>
+                <constraint firstAttribute="trailing" secondItem="FOl-05-L5a" secondAttribute="trailing" constant="20" id="vXC-jQ-KwT"/>
+                <constraint firstItem="uph-f9-AK3" firstAttribute="top" secondItem="FOl-05-L5a" secondAttribute="bottom" constant="20" id="xZL-RH-x6p"/>
+                <constraint firstItem="PW4-j3-Xgs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="y9O-uy-d7e"/>
+                <constraint firstItem="Bnb-3F-SLU" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="zXW-Aw-YKb"/>
+            </constraints>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="call_no" width="103.5" height="103.5"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34A9075F299395A4000FAC61 /* StatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A9075E299395A4000FAC61 /* StatusBarViewController.xib */; };
+		34BE643C2991E98E009A0EFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE643B2991E98E009A0EFC /* AppDelegate.m */; };
+		34BE64452991E98E009A0EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BE64432991E98E009A0EFC /* Main.storyboard */; };
+		34BE644D2991E98F009A0EFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE644C2991E98F009A0EFC /* main.m */; };
+		34BE64722991EDE5009A0EFC /* CallViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34BE64542991EDE5009A0EFC /* CallViewController.xib */; };
+		34BE64732991EDE5009A0EFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BE64552991EDE5009A0EFC /* Main.storyboard */; };
+		34BE64742991EDE5009A0EFC /* StatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE645B2991EDE5009A0EFC /* StatusBarViewController.m */; };
+		34BE64762991EDE5009A0EFC /* SDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE645D2991EDE5009A0EFC /* SDKManager.m */; };
+		34BE64772991EDE5009A0EFC /* CalloutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE645F2991EDE5009A0EFC /* CalloutViewController.m */; };
+		34BE64782991EDE5009A0EFC /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE64622991EDE5009A0EFC /* CallViewController.m */; };
+		34BE647C2991EDE5009A0EFC /* UIWindowSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE64692991EDE5009A0EFC /* UIWindowSegue.m */; };
+		34BE647D2991EDE5009A0EFC /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE646B2991EDE5009A0EFC /* UserInfo.m */; };
+		34BE647E2991EDE5009A0EFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BE646F2991EDE5009A0EFC /* LaunchScreen.storyboard */; };
+		34BE647F2991EDE5009A0EFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BE64702991EDE5009A0EFC /* Assets.xcassets */; };
+		34BE64802991EDE5009A0EFC /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34BE64712991EDE5009A0EFC /* UserInfo.plist */; };
+		F470862848F45EFA64A2E54E /* Pods_LTCallSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90B1988BC2A9E0579EA62B7 /* Pods_LTCallSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34622BB329CC3B030018D51F /* LTSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LTSDK.xcframework; path = Pods/LTSDK.xcframework; sourceTree = "<group>"; };
+		34622BB429CC3B030018D51F /* LTCallSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LTCallSDK.xcframework; path = Pods/LTCallSDK.xcframework; sourceTree = "<group>"; };
+		34A9075E299395A4000FAC61 /* StatusBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusBarViewController.xib; sourceTree = "<group>"; };
+		34BE64372991E98E009A0EFC /* LTCallSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTCallSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BE643A2991E98E009A0EFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34BE643B2991E98E009A0EFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34BE64442991E98E009A0EFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34BE644B2991E98F009A0EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34BE644C2991E98F009A0EFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34BE64542991EDE5009A0EFC /* CallViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallViewController.xib; sourceTree = "<group>"; };
+		34BE64552991EDE5009A0EFC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		34BE645A2991EDE5009A0EFC /* CalloutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalloutViewController.h; sourceTree = "<group>"; };
+		34BE645B2991EDE5009A0EFC /* StatusBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarViewController.m; sourceTree = "<group>"; };
+		34BE645D2991EDE5009A0EFC /* SDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKManager.m; sourceTree = "<group>"; };
+		34BE645E2991EDE5009A0EFC /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		34BE645F2991EDE5009A0EFC /* CalloutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalloutViewController.m; sourceTree = "<group>"; };
+		34BE64602991EDE5009A0EFC /* StatusBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarViewController.h; sourceTree = "<group>"; };
+		34BE64612991EDE5009A0EFC /* SDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKManager.h; sourceTree = "<group>"; };
+		34BE64622991EDE5009A0EFC /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
+		34BE64682991EDE5009A0EFC /* UIWindowSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWindowSegue.h; sourceTree = "<group>"; };
+		34BE64692991EDE5009A0EFC /* UIWindowSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWindowSegue.m; sourceTree = "<group>"; };
+		34BE646B2991EDE5009A0EFC /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		34BE646C2991EDE5009A0EFC /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		34BE646F2991EDE5009A0EFC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34BE64702991EDE5009A0EFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34BE64712991EDE5009A0EFC /* UserInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
+		34BE64812991EF92009A0EFC /* LTCallSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LTCallSample.entitlements; sourceTree = "<group>"; };
+		87DA6FE22D32930D149A569F /* Pods-LTCallSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCallSample.release.xcconfig"; path = "Target Support Files/Pods-LTCallSample/Pods-LTCallSample.release.xcconfig"; sourceTree = "<group>"; };
+		E90B1988BC2A9E0579EA62B7 /* Pods_LTCallSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTCallSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECACE444BF621AD11873272 /* Pods-LTCallSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCallSample.debug.xcconfig"; path = "Target Support Files/Pods-LTCallSample/Pods-LTCallSample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34BE64342991E98E009A0EFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F470862848F45EFA64A2E54E /* Pods_LTCallSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34A9076029939F78000FAC61 /* CallSample */ = {
+			isa = PBXGroup;
+			children = (
+				34BE646A2991EDE5009A0EFC /* UserInfo */,
+				34BE64592991EDE5009A0EFC /* Call */,
+			);
+			path = CallSample;
+			sourceTree = "<group>";
+		};
+		34BE642E2991E98E009A0EFC = {
+			isa = PBXGroup;
+			children = (
+				34BE64392991E98E009A0EFC /* LTCallSample */,
+				34BE64382991E98E009A0EFC /* Products */,
+				4CCF6E5F0240045A9FB8FB92 /* Pods */,
+				A71DBB769A18C80469FCD9AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34BE64382991E98E009A0EFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34BE64372991E98E009A0EFC /* LTCallSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34BE64392991E98E009A0EFC /* LTCallSample */ = {
+			isa = PBXGroup;
+			children = (
+				34BE64812991EF92009A0EFC /* LTCallSample.entitlements */,
+				34BE643A2991E98E009A0EFC /* AppDelegate.h */,
+				34BE64682991EDE5009A0EFC /* UIWindowSegue.h */,
+				34BE64692991EDE5009A0EFC /* UIWindowSegue.m */,
+				34BE643B2991E98E009A0EFC /* AppDelegate.m */,
+				34BE644C2991E98F009A0EFC /* main.m */,
+				34BE64432991E98E009A0EFC /* Main.storyboard */,
+				34A9076029939F78000FAC61 /* CallSample */,
+				34BE64532991EDE5009A0EFC /* CallResource */,
+				34BE646D2991EDE5009A0EFC /* Common */,
+				34BE644B2991E98F009A0EFC /* Info.plist */,
+			);
+			path = LTCallSample;
+			sourceTree = "<group>";
+		};
+		34BE64532991EDE5009A0EFC /* CallResource */ = {
+			isa = PBXGroup;
+			children = (
+				34BE64542991EDE5009A0EFC /* CallViewController.xib */,
+				34A9075E299395A4000FAC61 /* StatusBarViewController.xib */,
+				34BE64552991EDE5009A0EFC /* Main.storyboard */,
+			);
+			path = CallResource;
+			sourceTree = "<group>";
+		};
+		34BE64592991EDE5009A0EFC /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				34BE64612991EDE5009A0EFC /* SDKManager.h */,
+				34BE645D2991EDE5009A0EFC /* SDKManager.m */,
+				34BE645A2991EDE5009A0EFC /* CalloutViewController.h */,
+				34BE645F2991EDE5009A0EFC /* CalloutViewController.m */,
+				34BE645E2991EDE5009A0EFC /* CallViewController.h */,
+				34BE64622991EDE5009A0EFC /* CallViewController.m */,
+				34BE64602991EDE5009A0EFC /* StatusBarViewController.h */,
+				34BE645B2991EDE5009A0EFC /* StatusBarViewController.m */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		34BE646A2991EDE5009A0EFC /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				34BE646C2991EDE5009A0EFC /* UserInfo.h */,
+				34BE646B2991EDE5009A0EFC /* UserInfo.m */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		34BE646D2991EDE5009A0EFC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				34BE646E2991EDE5009A0EFC /* Resource */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		34BE646E2991EDE5009A0EFC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				34BE646F2991EDE5009A0EFC /* LaunchScreen.storyboard */,
+				34BE64702991EDE5009A0EFC /* Assets.xcassets */,
+				34BE64712991EDE5009A0EFC /* UserInfo.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4CCF6E5F0240045A9FB8FB92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EECACE444BF621AD11873272 /* Pods-LTCallSample.debug.xcconfig */,
+				87DA6FE22D32930D149A569F /* Pods-LTCallSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A71DBB769A18C80469FCD9AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34622BB429CC3B030018D51F /* LTCallSDK.xcframework */,
+				34622BB329CC3B030018D51F /* LTSDK.xcframework */,
+				E90B1988BC2A9E0579EA62B7 /* Pods_LTCallSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34BE64362991E98E009A0EFC /* LTCallSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34BE64502991E98F009A0EFC /* Build configuration list for PBXNativeTarget "LTCallSample" */;
+			buildPhases = (
+				EE8207931A0514FDCD0A9415 /* [CP] Check Pods Manifest.lock */,
+				34BE64332991E98E009A0EFC /* Sources */,
+				34BE64342991E98E009A0EFC /* Frameworks */,
+				34BE64352991E98E009A0EFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTCallSample;
+			productName = LTCallSample;
+			productReference = 34BE64372991E98E009A0EFC /* LTCallSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34BE642F2991E98E009A0EFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					34BE64362991E98E009A0EFC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 34BE64322991E98E009A0EFC /* Build configuration list for PBXProject "LTCallSample" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34BE642E2991E98E009A0EFC;
+			productRefGroup = 34BE64382991E98E009A0EFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34BE64362991E98E009A0EFC /* LTCallSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34BE64352991E98E009A0EFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BE647E2991EDE5009A0EFC /* LaunchScreen.storyboard in Resources */,
+				34BE64732991EDE5009A0EFC /* Main.storyboard in Resources */,
+				34BE64802991EDE5009A0EFC /* UserInfo.plist in Resources */,
+				34BE64722991EDE5009A0EFC /* CallViewController.xib in Resources */,
+				34A9075F299395A4000FAC61 /* StatusBarViewController.xib in Resources */,
+				34BE64452991E98E009A0EFC /* Main.storyboard in Resources */,
+				34BE647F2991EDE5009A0EFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE8207931A0514FDCD0A9415 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LTCallSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34BE64332991E98E009A0EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BE64742991EDE5009A0EFC /* StatusBarViewController.m in Sources */,
+				34BE64772991EDE5009A0EFC /* CalloutViewController.m in Sources */,
+				34BE643C2991E98E009A0EFC /* AppDelegate.m in Sources */,
+				34BE644D2991E98F009A0EFC /* main.m in Sources */,
+				34BE64762991EDE5009A0EFC /* SDKManager.m in Sources */,
+				34BE64782991EDE5009A0EFC /* CallViewController.m in Sources */,
+				34BE647C2991EDE5009A0EFC /* UIWindowSegue.m in Sources */,
+				34BE647D2991EDE5009A0EFC /* UserInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34BE64432991E98E009A0EFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34BE64442991E98E009A0EFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34BE644E2991E98F009A0EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34BE644F2991E98F009A0EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34BE64512991E98F009A0EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECACE444BF621AD11873272 /* Pods-LTCallSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LTCallSample/LTCallSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94YF95E34V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LTCallSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LTCallSample;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We will use your microphone to make a phone call via the App.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loftechs.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34BE64522991E98F009A0EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87DA6FE22D32930D149A569F /* Pods-LTCallSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LTCallSample/LTCallSample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 94YF95E34V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LTCallSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LTCallSample;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We will use your microphone to make a phone call via the App.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loftechs.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34BE64322991E98E009A0EFC /* Build configuration list for PBXProject "LTCallSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BE644E2991E98F009A0EFC /* Debug */,
+				34BE644F2991E98F009A0EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34BE64502991E98F009A0EFC /* Build configuration list for PBXNativeTarget "LTCallSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BE64512991E98F009A0EFC /* Debug */,
+				34BE64522991E98F009A0EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34BE642F2991E98E009A0EFC /* Project object */;
+}
