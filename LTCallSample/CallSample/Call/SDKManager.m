@@ -68,7 +68,14 @@
 }
 
 - (void)uploadNotificationKey:(void(^)(NSString *returnMsg))completion {
-    [LTSDK updateNotificationKeyWithAPNSToken:self.voipToken voipToken:self.voipToken completion:^(LTResponse * _Nonnull response) {
+
+#ifdef DEBUG
+    BOOL isDebug = YES;
+#else
+    BOOL isDebug = NO;
+#endif
+    
+    [LTSDK updateNotificationKeyWithAPNSToken:self.voipToken voipToken:self.voipToken cleanOld:YES isDebug:isDebug completion:^(LTResponse * _Nonnull response) {
         if (completion) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (response.returnCode == LTReturnCodeSuccess) {
